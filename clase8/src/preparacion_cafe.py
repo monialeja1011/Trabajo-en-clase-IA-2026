@@ -122,7 +122,7 @@ def visualizar_datos(df):
     print("GENERANDO VISUALIZACIONES")
     print("=" * 60)
 
-    # Estilo general de Seaborn
+
     sns.set_theme(style="whitegrid")
 
     
