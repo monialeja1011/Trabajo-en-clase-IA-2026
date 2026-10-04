@@ -1,8 +1,14 @@
 FROM python:3.12-slim
+
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
 
-COPY src/ ./src/
-CMD ["python", "src/main.py"]
+COPY requirements.txt .
+RUN pip install --upgrade pip
+RUN pip install -r requirements.txt
+
+COPY . .
+
+CMD ["tail", "-f", "/dev/null"]
