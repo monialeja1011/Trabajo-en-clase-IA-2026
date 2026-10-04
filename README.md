@@ -281,19 +281,19 @@ Se generaron tres visualizaciones utilizando Seaborn.
 
 ### Distribución de la producción
 
-![Distribución de la producción de café](data/distribucion_produccion_cafe.png)
+![Distribución de la producción](clase8/data/distribucion_produccion_cafe.png)
 
 Este gráfico permite observar cómo se distribuyen los valores de producción del dataset.
 
 ### Producción promedio por municipio
 
-![Producción promedio por municipio](data/produccion_por_municipio.png)
+![Producción por municipio](clase8/data/produccion_por_municipio.png)
 
 Este gráfico permite comparar la producción promedio entre los diferentes municipios.
 
 ### Hectáreas cosechadas vs producción
 
-![Hectáreas cosechadas vs producción](data/hectareas_vs_produccion_cafe.png)
+![Hectáreas vs producción](clase8/data/hectareas_vs_produccion_cafe.png)
 
 Este gráfico permite analizar la relación entre el número de hectáreas cosechadas y la producción obtenida. Se incluye una línea de regresión para observar la tendencia general.
 
