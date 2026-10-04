@@ -4,26 +4,25 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-# ============================================================
+
 # PREPARACIÓN DE DATOS PARA MACHINE LEARNING - CAFÉ
-# ============================================================
+
 
 print("=" * 60)
 print("PREPARACIÓN DE DATOS PARA MACHINE LEARNING - CAFÉ")
 print("=" * 60)
 
 
-# ------------------------------------------------------------
+
 # 1. CARGAR DATOS
-# ------------------------------------------------------------
 
 def cargar_datos(ruta):
     df = pd.read_csv(ruta)
     print(f"Datos cargados correctamente: {df.shape[0]} filas, {df.shape[1]} columnas.")
     return df
-# ------------------------------------------------------------
+
 # 2. EXPLORACIÓN DE DATOS
-# ------------------------------------------------------------
+
 
 def explorar_datos(df):
     print("\n" + "=" * 60)
@@ -46,9 +45,7 @@ def explorar_datos(df):
     print("=" * 60)
     print(df.isnull().sum())
 
-    # ------------------------------------------------------------
 # 3. LIMPIEZA Y PREPARACIÓN DE DATOS
-# ------------------------------------------------------------
 
 def limpiar_datos(df):
 
@@ -86,9 +83,8 @@ def limpiar_datos(df):
     print("\nColumna 'porcentaje_cosecha' creada.")
 
     return df
-# ------------------------------------------------------------
+
 # 4. CODIFICACIÓN DE VARIABLES CATEGÓRICAS
-# ------------------------------------------------------------
 
 def preparar_ml(df):
 
@@ -117,9 +113,8 @@ def preparar_ml(df):
     print(df_ml.head())
 
     return df_ml
-# ------------------------------------------------------------
+
 # 5. VISUALIZACIÓN DE DATOS
-# ------------------------------------------------------------
 
 def visualizar_datos(df):
 
@@ -130,9 +125,8 @@ def visualizar_datos(df):
     # Estilo general de Seaborn
     sns.set_theme(style="whitegrid")
 
-    # --------------------------------------------------------
+    
     # Gráfico 1: Distribución de la producción
-    # --------------------------------------------------------
 
     plt.figure(figsize=(10, 6))
 
@@ -156,9 +150,8 @@ def visualizar_datos(df):
 
     print("Gráfico 1 guardado: distribucion_produccion_cafe.png")
 
-    # --------------------------------------------------------
+    
     # Gráfico 2: Producción promedio por municipio
-    # --------------------------------------------------------
 
     plt.figure(figsize=(12, 8))
 
@@ -187,9 +180,8 @@ def visualizar_datos(df):
 
     print("Gráfico 2 guardado: produccion_por_municipio.png")
 
-    # --------------------------------------------------------
+    
     # Gráfico 3: Hectáreas cosechadas vs producción
-    # --------------------------------------------------------
 
     plt.figure(figsize=(10, 6))
 
@@ -214,9 +206,7 @@ def visualizar_datos(df):
 
     print("Gráfico 3 guardado: hectareas_vs_produccion_cafe.png")
 
-    # ------------------------------------------------------------
 # 6. EJECUCIÓN DEL PROCESO COMPLETO
-# ------------------------------------------------------------
 
 if __name__ == "__main__":
 
