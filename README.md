@@ -275,8 +275,6 @@ También se eliminó `codigo_municipio`, debido a que es un identificador y no d
 
 ## 6. Visualización con Seaborn
 
-## 6. Visualización con Seaborn
-
 Se generaron tres visualizaciones utilizando Seaborn.
 
 ### Distribución de la producción
