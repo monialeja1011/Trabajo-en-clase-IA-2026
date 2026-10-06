@@ -371,32 +371,4 @@ Esta práctica permitió asimilar los componentes clave del ciclo de vida de una
 
 A pesar de la simplicidad de las compuertas lógicas, modelar estos flujos sienta los cimientos de los algoritmos modernos de Machine Learning. Comprender la interacción entre variables como el *Bias*, la *Tasa de Aprendizaje* y los *Pesos Sinápticos* facilita el salto hacia arquitecturas complejas y herramientas profesionales de la industria como **Scikit-Learn**, **TensorFlow** o **PyTorch**.
 
----
 
-## 21. Próxima clase
-
-Tomando como referencia la guía de la asignatura, los siguientes objetivos temáticos consisten en:
-* Implementación completa de un perceptrón utilizando **Descenso del Gradiente** en Python puro.
-* Entrenamiento del modelo empleando un **Dataset real**.
-* Visualización matemática de la **Frontera de decisión**.
-* Comparación de rendimiento contra las neuronas lógicas desarrolladas en esta sesión.
-
----
-
-## 22. Anexo – Cheat Sheet de la Neurona Artificial
-
-| Concepto | Fórmula / Código | Descripción |
-| :--- | :--- | :--- |
-| **Suma ponderada** | `z = w1*x1 + w2*x2 + b` | Combina las entradas multiplicadas por sus pesos y suma el sesgo. |
-| **Función escalón** | `1 if z >= 0 else 0` | Mapea el valor de entrada a una salida binaria discreta. |
-| **Predicción** | `y_pred = escalon(z)` | El resultado binario final computado por la neurona. |
-| **Error** | `error = y_real - y_pred` | Magnitud y dirección de la desviación en la predicción. |
-| **Ajuste de peso** | `w += α * error * x` | Corrección aplicada a las conexiones sinápticas. |
-| **Ajuste de bias** | `b += α * error` | Modificación del umbral de disparo intrínseco. |
-| **Tasa de aprendizaje** | `α` u `eta` | Escala la magnitud del paso de actualización para evitar inestabilidad. |
-
----
-
-## 23. Conclusión final
-
-La actividad cumplió satisfactoriamente con el diseño e implementación de una neurona artificial desde cero, demostrando su efectividad en problemas linealmente separables (**AND, OR y NOT**) con una convergencia rápida entre **2 y 4 épocas** bajo una tasa de aprendizaje estable de **0.1**. La monitorización del error mediante Matplotlib sirvió para corroborar empíricamente la efectividad matemática de las reglas de actualización. Finalmente, el análisis teórico de la compuerta **XOR** delimitó las fronteras del perceptrón simple, abriendo de manera orgánica el camino hacia el estudio avanzado de las Redes Neuronales Artificiales.
