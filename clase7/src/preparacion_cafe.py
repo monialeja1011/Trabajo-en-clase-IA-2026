@@ -142,7 +142,7 @@ def visualizar_datos(df):
     plt.tight_layout()
 
     plt.savefig(
-        "clase8/data/distribucion_produccion_cafe.png",
+        "clase7/data/distribucion_produccion_cafe.png",
         dpi=150
     )
 
@@ -172,7 +172,7 @@ def visualizar_datos(df):
     plt.tight_layout()
 
     plt.savefig(
-        "clase8/data/produccion_por_municipio.png",
+        "clase7/data/produccion_por_municipio.png",
         dpi=150
     )
 
@@ -198,7 +198,7 @@ def visualizar_datos(df):
     plt.tight_layout()
 
     plt.savefig(
-        "clase8/data/hectareas_vs_produccion_cafe.png",
+        "clase7/data/hectareas_vs_produccion_cafe.png",
         dpi=150
     )
 
@@ -211,7 +211,7 @@ def visualizar_datos(df):
 if __name__ == "__main__":
 
     # Cargar dataset
-    df = cargar_datos("clase8/data/cafe_valle_limpio.csv")
+    df = cargar_datos("clase7/data/cafe_valle_limpio.csv")
 
     # Explorar dataset
     explorar_datos(df)
@@ -226,7 +226,7 @@ if __name__ == "__main__":
     df_ml = preparar_ml(df)
 
     # Guardar dataset preparado
-    ruta_salida = "clase8/data/cafe_preparado_ml.csv"
+    ruta_salida = "clase7/data/cafe_preparado_ml.csv"
 
     df_ml.to_csv(ruta_salida, index=False)
 

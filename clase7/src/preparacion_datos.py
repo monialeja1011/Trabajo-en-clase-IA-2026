@@ -44,21 +44,21 @@ def visualizar_datos(df):
     sns.histplot(data=df, x='total_venta', bins=10, kde=True, color='skyblue')
     plt.title('Distribución del Total de Ventas')
     plt.tight_layout()
-    plt.savefig('clase8/data/distribucion_ventas.png', dpi=150)
+    plt.savefig('clase7/data/distribucion_ventas.png', dpi=150)
     plt.show()
 
     plt.figure(figsize=(10, 6))
     sns.barplot(data=df, x='categoria', y='total_venta', estimator=np.sum, errorbar=None, palette='viridis')
     plt.title('Total de Ventas por Categoría')
     plt.tight_layout()
-    plt.savefig('clase8/data/ventas_por_categoria.png', dpi=150)
+    plt.savefig('clase7/data/ventas_por_categoria.png', dpi=150)
     plt.show()
 
     plt.figure(figsize=(8, 6))
     sns.scatterplot(data=df, x='cliente_edad', y='total_venta', hue='categoria', style='metodo_pago', s=100)
     plt.title('Relación: Edad del Cliente vs Total de Venta')
     plt.tight_layout()
-    plt.savefig('clase8/data/edad_vs_venta.png', dpi=150)
+    plt.savefig('clase7/data/edad_vs_venta.png', dpi=150)
     plt.show()
 
 def preparar_ml(df):
@@ -81,7 +81,7 @@ def main():
     print("PREPARACIÓN DE DATOS PARA MACHINE LEARNING - VENTAS")
     print("=" * 60)
 
-    df = cargar_datos('clase8/data/ventas_tienda.csv')
+    df = cargar_datos('clase7/data/ventas_tienda.csv')
     if df is None:
         return
 
@@ -90,8 +90,8 @@ def main():
     visualizar_datos(df_limpio)
     df_ml = preparar_ml(df_limpio)
 
-    df_ml.to_csv('clase8/data/ventas_preparadas_ml.csv', index=False)
-    print("\nDataset preparado guardado como 'clase8/data/ventas_preparadas_ml.csv'")
+    df_ml.to_csv('clase7/data/ventas_preparadas_ml.csv', index=False)
+    print("\nDataset preparado guardado como 'clase7/data/ventas_preparadas_ml.csv'")
     print("\nProceso completado exitosamente.")
 
 if __name__ == "__main__":

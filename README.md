@@ -36,7 +36,7 @@ ia-python/
 ├── .gitignore
 ├── .dockerignore
 │
-└── clase8/
+└── clase7/
     ├── data/
     │   ├── cafe_valle_limpio.csv
     │   ├── cafe_preparado_ml.csv
@@ -85,13 +85,13 @@ ia_python
 ### 4. Ejecutar la actividad de ventas
 
 ```bash
-docker exec -it ia_python python clase8/src/preparacion_datos.py
+docker exec -it ia_python python clase7/src/preparacion_datos.py
 ```
 
 ### 5. Ejecutar la actividad independiente de café
 
 ```bash
-docker exec -it ia_python python clase8/src/preparacion_cafe.py
+docker exec -it ia_python python clase7/src/preparacion_cafe.py
 ```
 
 ---
@@ -101,13 +101,13 @@ docker exec -it ia_python python clase8/src/preparacion_cafe.py
 La primera actividad utiliza el archivo:
 
 ```text
-clase8/data/ventas_tienda.csv
+clase7/data/ventas_tienda.csv
 ```
 
 El proceso se realiza mediante el script:
 
 ```text
-clase8/src/preparacion_datos.py
+clase7/src/preparacion_datos.py
 ```
 
 ### Exploración
@@ -145,7 +145,7 @@ Se utilizó `pd.get_dummies()` para realizar **One-Hot Encoding** de las variabl
 El resultado se guardó en:
 
 ```text
-clase8/data/ventas_preparadas_ml.csv
+clase7/data/ventas_preparadas_ml.csv
 ```
 
 ### Visualizaciones
@@ -164,7 +164,7 @@ Se generaron tres gráficos utilizando Seaborn:
 
 
 ```text
-clase8/data/cafe_valle_limpio.csv
+clase7/data/cafe_valle_limpio.csv
 ```
 
 Este dataset contiene información de la producción cafetera de municipios del **Valle del Cauca** durante el período **2019–2025**.
@@ -172,7 +172,7 @@ Este dataset contiene información de la producción cafetera de municipios del 
 El proceso se realizó mediante:
 
 ```text
-clase8/src/preparacion_cafe.py
+clase7/src/preparacion_cafe.py
 ```
 
 ---
@@ -281,19 +281,19 @@ Se generaron tres visualizaciones utilizando Seaborn.
 
 ### Distribución de la producción
 
-![Distribución de la producción](clase8/data/distribucion_produccion_cafe.png)
+![Distribución de la producción](clase7/data/distribucion_produccion_cafe.png)
 
 Este gráfico permite observar cómo se distribuyen los valores de producción del dataset.
 
 ### Producción promedio por municipio
 
-![Producción por municipio](clase8/data/produccion_por_municipio.png)
+![Producción por municipio](clase7/data/produccion_por_municipio.png)
 
 Este gráfico permite comparar la producción promedio entre los diferentes municipios.
 
 ### Hectáreas cosechadas vs producción
 
-![Hectáreas vs producción](clase8/data/hectareas_vs_produccion_cafe.png)
+![Hectáreas vs producción](clase7/data/hectareas_vs_produccion_cafe.png)
 
 Este gráfico permite analizar la relación entre el número de hectáreas cosechadas y la producción obtenida. Se incluye una línea de regresión para observar la tendencia general.
 
@@ -304,7 +304,7 @@ Después de realizar la limpieza, creación de variables y codificación categó
 Archivo generado:
 
 ```text
-clase8/data/cafe_preparado_ml.csv
+clase7/data/cafe_preparado_ml.csv
 ```
 
 El resultado final contiene:
